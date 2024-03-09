@@ -7,6 +7,7 @@
     <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -26,18 +27,20 @@
     <!--Home-->
     <section class="home" id="home">
         <div class="home-content">
-            <h1>It's <span>Tomo</span></h1>
-            <h3 class="text-animation">I'm a <span></span></h3>
+            <h1>Hi <span>There!</span></h1>
+            <h3 class="text-animation">I'm Tomo a <span></span></h3>
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, id.</p>
+            <p>I am a coding enthusiast with a keen interest in web development and Android app development. I believe
+                in the power of technology to make a positive impact, and I am eager to contribute to innovative
+                projects that push the boundaries of what is possible.</p>
 
             <div class="social-icons">
-                <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-                <a href="#"><i class='bx bxl-github'></i></a>
-                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
-                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.linkedin.com/in/andang-pratomo-b6b128292/"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://github.com/aptomoo"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/aptomo/"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://twitter.com/aywantyou"><i class='bx bxl-twitter'></i></a>
             </div>
-            <a href="#" class="btn">Hire Me</a>
+            <!-- <a href="#" class="btn">Hire Me</a> -->
         </div>
         <div class="home-img">
             <img src="photo.png" alt="">
@@ -51,10 +54,13 @@
             <h3 class="text-animation">
                 <span></span>
             </h3>
-            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, numquam.</p>
+            <p>I am a passionate web developer with an educational background in informatics management. With skills in
+                PHP, JavaScript, HTML, CSS, and MySQL, along with experience in Java for Android app development, I am
+                excited about the possibilities that technology brings. I am eager to continue learning and growing in
+                this dynamic field, ready to tackle new challenges and contribute to innovative projects.</p>
         </div>
         <div class="about-img">
-            <img src="photo.png" alt="">
+            <img src="photo2.png" alt="">
         </div>
     </section>
 
@@ -66,15 +72,15 @@
             <div class="porto-box">
                 <img src="1.png" alt="">
                 <div class="porto-info">
-                    <h4>Web Penggajian</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <h4>Payroll Website</h4>
+                    <p>This website was created with PHP, HTML, CSS, and MySQL.</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="porto-box">
                 <img src="2.png" alt="">
                 <div class="porto-info">
-                    <h4>Tes</h4>
+                    <h4>Test</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
@@ -82,8 +88,8 @@
             <div class="porto-box">
                 <img src="3.png" alt="">
                 <div class="porto-info">
-                    <h4>Web Portofolio</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <h4>Portofolio Website</h4>
+                    <p>This website was created with JavaScript, HTML, and CSS.</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -94,16 +100,26 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form action="#">
+        <form name="submit-to-google-sheet">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="text" placeholder="Number">
+                <input type="text" name="nama" placeholder="Full Name">
+                <input type="number" name="nomor" placeholder="Number">
             </div>
             <div class="input-email">
-                <input type="text" placeholder="E-mail">
+                <input type="email" name="email" placeholder="E-mail">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+            <textarea name="pesan" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+
+            <input type="submit" value="Send Message" class="btn btn-send">
+
+            <button class="btn buttonload">
+                <i class="fa fa-refresh fa-spin"></i> Loading
+            </button>
+
+            <div class="alert">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                Your Message Has Been Sent
+            </div>
         </form>
     </section>
 
@@ -113,9 +129,11 @@
             <p>Copyright &copy; 2024 by Andang Pratomo</p>
         </div>
     </footer>
+
     <a href="#" class="to-top">
         <i class='bx bxs-chevron-up-circle'></i>
     </a>
+
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
 </body>
