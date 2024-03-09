@@ -1,3 +1,12 @@
+// Toggle icon navbar
+let menuIc = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIc.onclick = () => {
+    menuIc.classList.toggle('bx-x-circle');
+    navbar.classList.toggle('active');
+}
+
 const toTop = document.querySelector(".to-top");
 
 window.addEventListener("scroll", () => {
@@ -7,15 +16,6 @@ window.addEventListener("scroll", () => {
         toTop.classList.remove("active");
     }
 })
-
-// Toggle icon navbar
-let menuIc = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
-
-menuIc.onclick = () => {
-    menuIc.classList.toggle('bx-x-circle');
-    navbar.classList.toggle('active');
-}
 
 // Scroll section active
 
