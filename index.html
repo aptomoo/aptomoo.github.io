@@ -35,7 +35,8 @@
                 projects that push the boundaries of what is possible.</p>
 
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/andang-pratomo-b6b128292/"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://www.linkedin.com/in/andang-pratomo-b6b128292/"><i
+                        class='bx bxl-linkedin-square'></i></a>
                 <a href="https://github.com/aptomoo"><i class='bx bxl-github'></i></a>
                 <a href="https://www.instagram.com/aptomo/"><i class='bx bxl-instagram-alt'></i></a>
                 <a href="https://twitter.com/aywantyou"><i class='bx bxl-twitter'></i></a>
@@ -136,6 +137,18 @@
 
     <script src="script.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({
+            distance: '80px',
+            duration: 2000,
+            delay: 200,
+        });
+
+        ScrollReveal().reveal('.home-content, heading', { origin: 'top' });
+        ScrollReveal().reveal('.home-img, .porto-box, .contact form', { origin: 'buttom' });
+        ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+        ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+    </script>
 </body>
 
 </html>
