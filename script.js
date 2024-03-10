@@ -6,10 +6,6 @@ let navbar = document.querySelector('.navbar');
 const toTop = document.querySelector(".to-top");
 
 window.addEventListener("scroll", () => {
-    // Toggle icon navbar
-    menuIc.classList.remove('bx-x-circle');
-    navbar.classList.remove('active');
-
     // Back to top
     if (window.pageYOffset > 100) {
         toTop.classList.add("active");
@@ -18,10 +14,7 @@ window.addEventListener("scroll", () => {
     }
 });
 
-menuIc.onclick = () => {
-    menuIc.classList.toggle('bx-x-circle');
-    navbar.classList.toggle('active');
-}
+
 
 // Scroll section active
 let sections = document.querySelectorAll('section');
@@ -97,7 +90,10 @@ ScrollReveal({
     delay: 200,
 });
 
-ScrollReveal().reveal('.home-content, heading', { origin: 'top' });
+ScrollReveal().reveal('.home-content, heading', { origin: 'top',
+afterReveal: function (el) {
+    document.getElementById('menu-icon').style.display = 'none';
+} });
 ScrollReveal().reveal('.home-img, .porto-box, .contact form', { origin: 'buttom' });
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
