@@ -1,3 +1,16 @@
+// Scroll reveal animation
+
+ScrollReveal({
+    distance: '80px',
+    duration: 2000,
+    delay: 200,
+});
+
+ScrollReveal().reveal('.home-content, heading', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .porto-box, .contact form', { origin: 'buttom' });
+ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+
 // Toggle icon navbar
 let menuIc = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
@@ -43,20 +56,6 @@ window.onscroll = () => {
     menuIc.classList.remove('bx-x-circle');
     navbar.classList.remove('active');
 };
-
-// Scroll reveal animation
-
-ScrollReveal({
-    distance: '80px',
-    duration: 2000,
-    delay: 200,
-});
-
-ScrollReveal().reveal('.home-content, heading, bx bx-menu, .to-top', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .porto-box, .contact form', { origin: 'buttom' });
-ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
-
 
 // Handle form to google sheets
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyo1ef97orvZpOmmdTZpqR4Z_BIlTpqrmH4c1GM5MhgXkbexNmCjoueqeaC3MYxirQgwQ/exec';
