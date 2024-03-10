@@ -519,7 +519,7 @@ footer {
         position: absolute;
         top: 100%;
         right: 0;
-        width: 100px;
+        width: 120px;
         padding: 1rem 3%;
         background-color: rgba(0, 0, 0, 0.8);
         display: none;
@@ -557,7 +557,7 @@ footer {
     }
 
     .home-img img {
-        width: 90vw;
+        width: 50vw;
         margin-top: 4rem;
     }
 
@@ -565,9 +565,13 @@ footer {
         flex-direction: column;
     }
 
+    .about-content {
+        order: 2;
+    }
+
     .about-img img {
-        width: 90vw;
-        margin-top: 4rem;
+        content: url(photo3.png);
+        width: 50vw;
     }
 
     .porto-container {
@@ -599,13 +603,13 @@ footer {
 
     .about-img img {
         content: url(photo3.png);
-        width: 70vw;
+        width: 50vw;
     }
     .about-content .heading{
         text-align: center;
     }
     .about-content {
-        order: 2;;
+        order: 2;
         text-align: center;
     }
 
