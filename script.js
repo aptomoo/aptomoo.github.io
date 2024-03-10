@@ -1,16 +1,3 @@
-// Scroll reveal animation
-
-ScrollReveal({
-    distance: '80px',
-    duration: 2000,
-    delay: 200,
-});
-
-ScrollReveal().reveal('.home-content, heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .porto-box, .contact form', { origin: 'buttom' });
-ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
-
 // Toggle icon navbar
 let menuIc = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
